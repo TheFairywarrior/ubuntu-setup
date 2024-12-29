@@ -1,0 +1,2 @@
+mkdir ~/Documents/apps
+
