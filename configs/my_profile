@@ -2,9 +2,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-export PATH=/home/gecker/Documents/apps/go/bin:$PATH
-export PATH=/home/gecker/Documents/apps/flutter/bin:$PATH
-export PATH=/home/gecker/Documents/apps/bin:$PATH
+export PATH=/home/$USER/Documents/apps/go/bin:$PATH
+export PATH=/home/$USER/Documents/apps/flutter/bin:$PATH
+export PATH=/home/$USER/Documents/apps/bin:$PATH
 
 
 export NVM_DIR="$HOME/.nvm"
