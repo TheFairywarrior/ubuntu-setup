@@ -13,4 +13,4 @@ export NVM_DIR="$HOME/.nvm"
 
 
 alias run_venv="source venv/bin/activate"
-
+alias sync_gdrive=rclone --progress sync gdrive:/ ~/Documents/google_drive
