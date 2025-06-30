@@ -4,7 +4,8 @@
 echo "INSTALLING REQUIRED LIBRARIES"
 sudo apt update; sudo apt install -y build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev curl git \
-libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev \
+libpq-dev python2-dev
 
 ###########################
 ## INSTALLING UTILITIES ##
@@ -34,6 +35,8 @@ nvm use --lts
 
 # Python
 curl https://pyenv.run | bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 
 # Go
 # Setting up os requirements
@@ -57,7 +60,7 @@ echo "Downloaded ${GO_VERSION}.linux-amd64.tar.gz"
 
 tar -C . -xzf "${GO_VERSION}.${OS}-${ARCH}.tar.gz"
 
-cp -r ./go ~/Documents/apps
+cp -r ./go ~/Documents/apps/go
 
 rm -r go
 rm "${GO_VERSION}.${OS}-${ARCH}.tar.gz"
