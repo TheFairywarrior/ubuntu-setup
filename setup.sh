@@ -10,7 +10,7 @@ libpq-dev python2-dev
 ###########################
 ## INSTALLING UTILITIES ##
 ##########################
-sudo -v ; curl https://rclone.org/install.sh | sudo bash
+# sudo -v ; curl https://rclone.org/install.sh | sudo bash
 
 ##################################
 ## SETTING UP FOLDER STRUCTURE ##
@@ -75,3 +75,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ###########################
 git config --global user.name "Gareth Becker" 
 git config --global user.email "beckergareth38@gmail.com"
+
+
+##################
+## Setup docker ##
+##################
+bash docker.sh 
+
+###############
+## Setup ZSH ##
+###############
+bash zsh.sh
